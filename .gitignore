@@ -1,1 +1,32 @@
+# Environment variables
 .env
+.env.*
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# logs
+logs/
+*.log
+
+# Testing and coverage reports
+.coverage
+htmlcov/
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# build and distribution files
+build/
+dist/
+*.egg-info/
+
