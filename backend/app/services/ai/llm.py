@@ -9,6 +9,7 @@ client = OpenAI(
 def call_llm(prompt: str) -> str:
     response = client.chat.completions.create(  # cerebras uses chat.completions, not responses
         model=settings.MODEL_NAME,
+        temperature=0.3,
         messages=[
             {"role": "user", "content": prompt}
         ]
