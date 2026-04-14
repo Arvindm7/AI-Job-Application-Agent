@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.api.routes import test, resume , analyze, tailor_resume,cover_letter,interview_prep
+from app.api.routes import test, resume , analyze, tailor_resume,cover_letter,interview_prep,jobs_search
 
 app = FastAPI(
     title="AI Job Agent",
@@ -16,11 +16,12 @@ app.add_middleware(
 )
 
 app.include_router(test.router, prefix="/test",tags=["Test"])
-app.include_router(resume.router, prefix="/resume", tags=["Resume-Text-Extraction"])
-app.include_router(analyze.router, prefix="/analyze", tags=["Analyze"])
-app.include_router(tailor_resume.router, prefix="/tailor", tags=["Tailor-Resume"])
-app.include_router(cover_letter.router, prefix="/cover-letter", tags=["Cover-Letter"])
-app.include_router(interview_prep.router, prefix="/interview-prep", tags=["Interview-Prep"])
+app.include_router(resume.router, prefix="/resume_parser", tags=["Resume-Text-Extraction"])
+app.include_router(analyze.router, prefix="/analyze_resume", tags=["Analyze"])
+app.include_router(tailor_resume.router, prefix="/tailor_resume", tags=["Tailor-Resume"])
+app.include_router(cover_letter.router, prefix="/cover_letter", tags=["Cover-Letter"])
+app.include_router(interview_prep.router, prefix="/interview_prep", tags=["Interview-Prep"])
+app.include_router(jobs_search.router, prefix="/jobs_search", tags=["Job-Search"])
 
 @app.get("/")
 def root():
