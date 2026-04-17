@@ -3,12 +3,13 @@ import Link from 'next/link'
 
 const features = [
   { icon: '🎯', title: 'ATS Analyzer', desc: 'Check your resume score instantly', href: '/ats-check' },
-  { icon: '✏️', title: 'Resume Tailor', desc: 'Get LaTeX resume optimized for any job', href: '/tailor' },
-  { icon: '📨', title: 'Cover Letter', desc: 'Personalized cover letter in seconds', href: '/cover-letter' },
-  { icon: '🤝', title: 'Job Match', desc: 'Find jobs that match your profile', href: '/jobs' },
-  { icon: '🎤', title: 'Interview Prep', desc: 'Questions, plan and resources', href: '/interview' },
-  { icon: '📊', title: 'Resume Match', desc: 'Score your resume vs any job', href: '/analyze' },
+  { icon: '✏️', title: 'Resume Tailor', desc: 'Get LaTeX resume optimized for any job', href: '/tailor_resume' },
+  { icon: '📨', title: 'Cover Letter', desc: 'Personalized cover letter in seconds', href: '/cover_letter' },
+  { icon: '🤝', title: 'Job Match', desc: 'Find jobs that match your profile', href: '/jobs_search' },
+  { icon: '🎤', title: 'Interview Prep', desc: 'Questions, plan and resources', href: '/interview_prep' },
+  { icon: '📊', title: 'Resume Match', desc: 'Score your resume vs any job', href: '/analyze_resume' },
 ]
+
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
         }}>
           Job<span style={{ color: '#6c47ff' }}>Agent</span>
         </span>
-        <Link href="/jobs" style={{
+        <Link href="/dashboard" style={{
           background: 'rgba(108,71,255,0.15)', border: '1px solid rgba(108,71,255,0.3)',
           color: '#b89ffe', padding: '8px 20px', borderRadius: 100,
           fontSize: 14, fontWeight: 500, textDecoration: 'none'
@@ -59,7 +60,7 @@ export default function Home() {
           matched jobs and full interview prep — all in one place.
         </p>
 
-        <Link href="/jobs" style={{
+        <Link href="/dashboard" style={{
           display: 'inline-block',
           background: 'linear-gradient(135deg, #6c47ff, #ff4d8d)', 
           color: 'white', padding: '16px 40px', borderRadius: 14,

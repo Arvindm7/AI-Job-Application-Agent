@@ -20,29 +20,29 @@ export const apiClient = {
 
   // analyze
   analyzeResume: (file, job_description) =>
-    api.post('/analyze/resume', formData(file, { job_description })),
+    api.post('/analyze_resume/resume', formData(file, { job_description })),
 
   atsCheck: (file) =>
-    api.post('/analyze/ats-check', formData(file)),
+    api.post('/analyze_resume/ats-check', formData(file)),
 
   // tailor
   tailorLatex: (file, job_description) =>
-    api.post('/tailor/resume/latex', formData(file, { job_description }), {
+    api.post('/tailor_resume/resume/latex', formData(file, { job_description }), {
       responseType: 'text'
     }),
 
   // cover letter
   generateCoverLetter: (file, job_description) =>
-    api.post('/cover-letter/generate', formData(file, { job_description })),
+    api.post('/cover_letter/generate', formData(file, { job_description })),
 
   // interview
   interviewPrep: (file, job_description) =>
-    api.post('/interview/prepare', formData(file, { job_description })),
+    api.post('/interview_prep/prepare', formData(file, { job_description })),
 
   // jobs
   matchJobs: (file, location = 'India', remote_only = false) =>
-    api.post('/jobs/match', formData(file, { location, remote_only })),
+    api.post('/jobs_search/match', formData(file, { location, remote_only })),
 
   searchJobs: (query, location = 'India', remote_only = false) =>
-    api.get('/jobs/search', { params: { query, location, remote_only } }),
+    api.get('/jobs_search/search', { params: { query, location, remote_only } }),
 }
