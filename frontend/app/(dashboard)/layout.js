@@ -3,12 +3,12 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 const navItems = [
-  { icon: '📊', label: 'Resume Match', href: '/analyze' },
+  { icon: '📊', label: 'Resume Match', href: '/analyze_resume' },
   { icon: '🎯', label: 'ATS Check', href: '/ats-check' },
-  { icon: '✏️', label: 'Tailor Resume', href: '/tailor' },
-  { icon: '📨', label: 'Cover Letter', href: '/cover-letter' },
-  { icon: '🎤', label: 'Interview Prep', href: '/interview' },
-  { icon: '🤝', label: 'Find Jobs', href: '/jobs' },
+  { icon: '✏️', label: 'Tailor Resume', href: '/tailor_resume' },
+  { icon: '📨', label: 'Cover Letter', href: '/cover_letter' },
+  { icon: '🎤', label: 'Interview Prep', href: '/interview_prep' },
+  { icon: '🤝', label: 'Find Jobs', href: '/jobs_search' },
 ]
 
 export default function DashboardLayout({ children }) {
