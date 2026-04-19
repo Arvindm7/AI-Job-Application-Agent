@@ -8,6 +8,8 @@ const features = [
   { icon: '🤝', title: 'Job Match', desc: 'Find jobs that match your profile', href: '/jobs_search' },
   { icon: '🎤', title: 'Interview Prep', desc: 'Questions, plan and resources', href: '/interview_prep' },
   { icon: '📊', title: 'Resume Match', desc: 'Score your resume vs any job', href: '/analyze_resume' },
+  { icon: '⚡', title: 'One-Click Pipeline', desc: 'All-in-one resume optimization', href: '/pipeline' },
+  { icon: '🕵️', title: 'Company Research', desc: 'Insider info on any company', href: '/company' },
 ]
 
 

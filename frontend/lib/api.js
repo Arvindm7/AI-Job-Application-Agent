@@ -45,4 +45,21 @@ export const apiClient = {
 
   searchJobs: (query, location = 'India', remote_only = false) =>
     api.get('/jobs_search/search', { params: { query, location, remote_only } }),
+
+  // pipeline
+  runPipeline: (file, job_description) =>
+    api.post('/pipeline/run', formData(file, { job_description })),
+
+  // export all
+  exportPackage: (pipelineResult) =>
+    api.post('/export/package', pipelineResult, {
+      responseType: 'blob'   // important — binary zip file
+    }),
+
+    // company research
+  researchCompany: (company_name, role = "") =>
+    api.post('/company/research', {
+      company_name: company_name,
+      role: role || ""    // ensure never null or undefined
+    }),
 }

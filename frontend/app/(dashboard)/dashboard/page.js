@@ -32,6 +32,16 @@ const features = [
     desc: 'AI matches your resume to real job postings',
     time: '~60 seconds', color: '#3ecf8e'
   },
+  {
+    icon: '🕵️', title: 'Company Research', href: '/company',
+    desc: 'Get insider information about any company',
+    time: '~45 seconds', color: '#ff4d8d'
+  },
+  {
+    icon: '⚡', title: 'One-Click Pipeline', href: '/pipeline',
+    desc: 'Run all optimizations in one go and get a complete package',
+    time: '~2 minutes', color: '#6c47ff'
+  }
 ]
 
 const steps = [
