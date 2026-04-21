@@ -62,4 +62,9 @@ export const apiClient = {
       company_name: company_name,
       role: role || ""    // ensure never null or undefined
     }),
+
+    // outreach
+    generateOutreach: (formData) =>
+    api.post('/outreach/generate', formData),
+    
 }
