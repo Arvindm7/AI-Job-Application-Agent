@@ -8,27 +8,27 @@ const features = [
     time: '~30 seconds', color: '#6c47ff'
   },
   {
-    icon: '📊', title: 'Resume Match', href: '/analyze',
+    icon: '📊', title: 'Resume Match', href: '/analyze_resume',
     desc: 'See how well your resume matches a specific job description',
     time: '~45 seconds', color: '#ff4d8d'
   },
   {
-    icon: '✏️', title: 'Tailor Resume', href: '/tailor',
+    icon: '✏️', title: 'Tailor Resume', href: '/tailor_resume',
     desc: 'Get an ATS optimized LaTeX resume for any job',
     time: '~60 seconds', color: '#3ecf8e'
   },
   {
-    icon: '📨', title: 'Cover Letter', href: '/cover-letter',
+    icon: '📨', title: 'Cover Letter', href: '/cover_letter',
     desc: 'Generate a personalized cover letter instantly',
     time: '~45 seconds', color: '#f9a825'
   },
   {
-    icon: '🎤', title: 'Interview Prep', href: '/interview',
+    icon: '🎤', title: 'Interview Prep', href: '/interview_prep',
     desc: 'Get questions, study plan and resources to ace interviews',
     time: '~90 seconds', color: '#b89ffe'
   },
   {
-    icon: '🤝', title: 'Find Jobs', href: '/jobs',
+    icon: '🤝', title: 'Find Jobs', href: '/jobs_search',
     desc: 'AI matches your resume to real job postings',
     time: '~60 seconds', color: '#3ecf8e'
   },

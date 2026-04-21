@@ -10,7 +10,8 @@ const navItems = [
   { icon: '📨', label: 'Cover Letter', href: '/cover_letter' },
   { icon: '🎤', label: 'Interview Prep', href: '/interview_prep' },
   { icon: '🤝', label: 'Find Jobs', href: '/jobs_search' },
-  { icon: '🕵️', label: 'Company Research', href: '/company' }, 
+  { icon: '🕵️', label: 'Company Research', href: '/company' },
+  { icon: '📧', label: 'Cold Outreach', href: '/outreach' }, 
 ]
 
 export default function DashboardLayout({ children }) {
