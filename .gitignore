@@ -30,3 +30,11 @@ build/
 dist/
 *.egg-info/
 
+# OS files
+.DS_Store
+
+# Node modules and build files
+node_modules/
+
+# db files
+*.db
